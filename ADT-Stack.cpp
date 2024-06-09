@@ -79,7 +79,7 @@ int deletion(struct Stack* stc)
 		return temp;
 	}
 }
- peek(struct Stack* stc)
+void peek(struct Stack* stc)
 {
 	if(isEmpty(stc))
 	{
