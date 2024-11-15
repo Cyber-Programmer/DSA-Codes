@@ -10,7 +10,13 @@ void mergeSort(int arr1[],int arr2[],int size)
 	int ctr = 0;
 	for(int i = 0;i<(size+size);i++)
 	{
-		if(arr1[j]<arr2[k])
+		if (j >= size) {
+            		arr[ctr] = arr2[k];
+            		k++;
+        	} else if (k >= size) {
+            		arr[ctr] = arr1[j];
+            		j++;
+		} else if(arr1[j]<arr2[k])
 		{
 			arr[ctr] = arr1[j];
 			j++;
